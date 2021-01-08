@@ -91,38 +91,38 @@ function draw() {
    {
     console.log("hi1"+particle);
      particle.display();
-     if(particle.body.position.y < 760);
+     if(particle.body.position.y > 760);
      {
        if(particle.body.position.x < 300)
        {
          score=score+500;
-         particle!=null;
+        particle=null;
        }
-       if(particle.body.position.x >300)
+     else  if(particle.body.position.x >300)
        {
          if(particle.body.position.x <480){
            score=score+100;
-           particle!=null;
+          particle=null;
          }
        }
-       if(particle.body.position.x>480){
+     else  if(particle.body.position.x>480){
          if(particle.body.position.x<720){
            score=score+200;
-           particle!=null;
+           particle=null;
          }
        }
-          if(count>=5){
-            gameState = "end";
-            textSize(70);
-            fill("red");
-            text(" GAME OVER ",200,300,) 
-
-            
-          }
+          
        
       }
       }
-    
+      if(count>=5){
+        gameState = "end";
+        textSize(70);
+        fill("red");
+        text(" GAME OVER ",200,300,) 
+
+        
+      }
      
              
               
